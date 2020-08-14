@@ -1,14 +1,16 @@
 <!DOCTYPE HTML>
-<!--EN index-->
+<!--PT index-->
 <html>
 <head>
     <meta name="viewport" content="widht=device-width,initial-scale=1, user-scalabe=no, minimum-scale=0.5,maximum-scale=3">
     <meta charset="utf-8">
     <title>Bem Vindo!</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+<!--NavBar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="#">Dev.Corrêa</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,27 +22,54 @@
             <a class="nav-link" href="#">Início <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Currículo</a>
+            <a class="nav-link" href="curriculo.html">Currículo</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contato</a>
+            <a class="nav-link" href="contato.html">Contato</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Select Language
+              Mude a Língua
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Portuguese</a>
+              <a class="dropdown-item" href="#" onclick="alert('Você já está na versão em português desse site!')">Portuguese </a>
               <a class="dropdown-item" href="index.html">English </a>
             </div>
           </li>
         </ul>
       </div>
     </nav>
+<!--End of NavBar-->
     
+    <h1 class="tit">Quem Sou Eu </h1>
+    
+<!--Grid System-->
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6-md-5-sm-4">
+          <div class="card" style="width: 30rem;">
+              <img src="f1.gif" class="card-img-top" alt="Foto Bruno">
+              <div class="card-body">
+                <p class="card-text fT">Colocar minha foto aqui</p>
+                <p class="fT"><a href="https://www.instagram.com/brunocorrea1221" id="fL" target="_blank">Instagram Pessoal</a></p>
+              </div>
+         </div>
+        </div>
+        <div class="col-lg-6-md-7-sm-8">
+          <ul id="me">
+              
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+<!--End of Grid System-->
+    
+<!--BootStrap Scripts-->   
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script> 
-    
+<!--End of BootStraps Scripts-->
 </body>
 </html>

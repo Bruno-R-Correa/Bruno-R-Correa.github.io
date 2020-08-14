@@ -1,0 +1,24 @@
+.tit{
+    text-align: center;
+    color: navy;
+    margin-top: 1em;
+    font-family:serif;
+    font-style: bold;
+}
+.fT{
+    text-align: center;
+}
+#fL{
+    text-align: center;
+    color:black;
+    padding: 5px;
+    background-color: lightgrey;
+    border-style: outset;
+    border-radius: 15px;
+    border-color:dimgray;
+}
+#fL:hover{
+    background-color: dimgray;
+    color: white;
+    border-style: inset;
+}
