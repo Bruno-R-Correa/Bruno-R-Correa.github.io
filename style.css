@@ -4,6 +4,7 @@
     margin-top: 1em;
     font-family:serif;
     font-style: bold;
+    margin-bottom: 2%;
 }
 .fT{
     text-align: center;
@@ -21,4 +22,7 @@
     background-color: dimgray;
     color: white;
     border-style: inset;
+}
+.nF{
+margin-bottom: 3%;
 }
