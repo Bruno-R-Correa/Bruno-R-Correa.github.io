@@ -49,8 +49,8 @@
     width:50%;
 }
 
-/*@media only screen (maxwidth="700px"){
+@media only screen and (maxwidth=700px){
 .nF{
-    margin-bottom: 5%;
+    margin-bottom: 8%;
 }
-}*/
+}
