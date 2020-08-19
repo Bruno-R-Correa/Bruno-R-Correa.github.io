@@ -7,3 +7,10 @@ function calcIdade() {
     }
     document.getElementById("ida").innerHTML = " " + ano + " anos";
 }
+
+function trocaText(){
+    document.getElementById("bD").innerHTML = "Clique Aqui!";
+}
+function trocText(){
+    document.getElementById("bD").innerHTML = "Baixar em PDF!";
+}
