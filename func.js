@@ -1,11 +1,13 @@
 function calcIdade() {
     var now = new Date(), ano = now.getFullYear();
-    if ((6 <= now.getMonth()) && (19 < now.getDate())) {
+    var mes = now.getMonth() + 1;
+    if ((6 >= mes) && (19 <= now.getDate())) {
         ano = ano - 2005;
     } else {
         ano = ano - 2004;
     }
     document.getElementById("ida").innerHTML = " " + ano + " anos";
+    document.getElementById("dat").innerHTML = now.getDate() + " / " + mes + " / " + now.getFullYear();
 }
 
 function trocaText(){
