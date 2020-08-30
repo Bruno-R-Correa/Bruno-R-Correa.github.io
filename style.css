@@ -50,24 +50,8 @@
 }
 
 #bD{
-    color:red;
-    text-align: center;
-    background-color:slategray;
-    padding:1%;
-    margin-left: 37.5%;
-    margin-right: 37.5%;
-    width:25%;
-    margin-top:3%;
-    margin-bottom:3%;
-    border-width: 1%;
-    border-radius: 10%;
-    border-style: outset;
-    border-color: dimgray;
+    margin-top: 3%;
 }
-#bD:hover{
-    border-style: inset;
-}
-
 .cF{
    margin-top:3%; 
 }
