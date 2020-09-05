@@ -16,3 +16,10 @@ function trocaText(){
 function trocText(){
     document.getElementById("bD").innerHTML = "Baixar em PDF!";
 }
+
+function horario(){
+    var hor = new Date();
+    document.getElementById("hora").innerHTML = hor.getHours() + ":" + hor.getMinutes() + ":" + hor.getSeconds();
+    var i = 1;
+	var timer = setInterval(function() { horario() }, 1000);
+}
