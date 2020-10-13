@@ -1,4 +1,4 @@
-<h1> Bruno-R-Correa.github.io </h1>
+<h1> https://brunorcorrea.github.io/personalsite/</h1>
 
 Português: Site pessoal com informações sobre mim.
 <br>
