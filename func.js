@@ -7,7 +7,10 @@ function calcIdade() {
         ano = ano - 2004;
     }
     document.getElementById("ida").innerHTML = " " + ano + " anos";
-    document.getElementById("dat").innerHTML = now.getDate() + " / " + mes + " / " + now.getFullYear();
+    if(mes<10) mes = "0" + mes;
+    let dia = now.getDate();
+    if(dia<10) dia = "0" + dia;
+    document.getElementById("dat").innerHTML = dia + " / " + mes + " / " + now.getFullYear();
 }
 
 function trocaText(){
@@ -19,7 +22,13 @@ function trocText(){
 
 function horario(){
     var hor = new Date();
-    document.getElementById("hora").innerHTML = hor.getHours() + ":" + hor.getMinutes() + ":" + hor.getSeconds();
+    let hour = hor.getHours();
+    if(hour<10) hour = "0" + hour;
+    let min = hor.getMinutes();
+    if(min<10) min = "0" + min;
+    let sec = hor.getSeconds();
+    if(sec<10) sec = "0" + sec;
+    document.getElementById("hora").innerHTML = hour + ":" + min + ":" + sec;
     var i = 1;
-	var timer = setInterval(function() { horario() }, 1000);
+	var timer = setInterval(() => horario() , 1000);
 }

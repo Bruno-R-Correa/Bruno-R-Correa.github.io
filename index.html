@@ -6,9 +6,10 @@
     <meta charset="utf-8">
     <title>Welcome!</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body>
+<body onload="calcIdade(),horario()">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="#">Dev.Corrêa</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,9 +39,53 @@
       </div>
     </nav>
     
+    <!--End of NavBar-->
+    
+    <h1 class="tit">Who am I </h1>
+    
+    <!--Grid System-->
+        
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="card" style="width: 100%;">
+                  <img src="f1.gif" class="card-img-top" alt="Foto Bruno">
+                  <div class="card-body">
+                    <p class="card-text fT">Colocar minha foto aqui</p>
+                    <p class="fT"><a href="https://www.linkedin.com/in/brunorcorrea/?locale=en_US" target="_blank" id="fL">Linkedin</a></p>
+                  </div>
+            </div>
+              </div>
+            <div class="col-md-6-sm-12">
+              <ul id="me">
+                  <br>
+                  <li><b>Name:</b> Bruno Ricardo Corrêa</li>
+                  <li><b>Age:</b><span id="ida"> 0 anos</span></li>
+                  <li><b>City:</b> Iracemápolis-SP</li>
+                  <li><b>Languages:</b> Portuguese(native), English (intermediary)</li>
+                  <li><b>Front-End:</b> HTML e CSS (advanced), JavaScript (beginner) </li>
+                  <li><b>Back-End:</b> C, C++, C# (intermediary)</li>
+                  <li><b>Knowledges:</b> Corel Draw, Photoshop, Microsoft Office</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    <!--End of Grid System-->
+
+    <!--Footer-->
+    <div class="container-fluid footer">
+      <div class="row">
+        <div class="col">Hour: <span id="hora"></span></div>
+        <div class="col">Date: <span id="dat"></span></div>
+        <div class="col">Weather: "Available soon"</div>
+      </div>
+    </div>
+    <!--End do Footer-->
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script> 
+<script src="func.js"></script>
     
 </body>
 </html>
