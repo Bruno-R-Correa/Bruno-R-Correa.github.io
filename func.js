@@ -32,3 +32,43 @@ function horario(){
     var i = 1;
 	var timer = setInterval(() => horario() , 1000);
 }
+
+function dark(){
+    // if(localStorage.getItem("modo") === "lightMode") localStorage.setItem("modo","darkMode");
+    // else localStorage.setItem("modo","lightMode");
+    // document.body.className = localStorage.getItem("modo");
+    
+    let f = document.getElementsByClassName("lightMode");
+    console.log(f)
+    if(f.length != -1)
+    {
+        for (let i = 0; i<=f.length;i++){
+            console.log(f[i].className);
+            let j = (f[i].className.length) - 9;
+            console.log(j);
+            let classes = "";
+            for(let a = 0;a<j;a++) 
+            {
+                classes += f[i].className[a];
+            }
+            f[i].className = classes + " darkMode";
+            console.log(f[i].className);
+        }
+    }
+    f = document.getElementsByClassName("darkMode");
+    if( f.length != -1)
+    {
+        for (let i = 0; i<=f.length;i++){
+            console.log(f[i].className);
+            let j = (f[i].className.length) - 8;
+            console.log(j);
+            let classes = "";
+            for(let a = 0;a<j;a++) 
+            {
+                classes += f[i].className[a];
+            }
+            f[i].className = classes + " lightMode";
+            console.log(f[i].className);
+        }
+    }
+}

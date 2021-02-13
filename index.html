@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body onload="calcIdade(),horario()">
+<body onload="calcIdade(),horario()" class="lightMode">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="#">Dev.Corrêa</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,6 +35,12 @@
               <a class="dropdown-item" href="#" onclick="alert('You are already in the English version of my website!')">English </a>
             </div>
           </li>
+          <li>
+            <div class="switch__container">
+              <input id="switch-shadow" class="switch switch--shadow" type="checkbox" />
+              <label for="switch-shadow"></label>
+            </div>
+          </li>
         </ul>
       </div>
     </nav>
@@ -48,7 +54,7 @@
         <div class="container">
           <div class="row">
             <div class="col">
-              <div class="card" style="width: 100%;">
+              <div class="card lightMode" style="width: 100%;">
                   <img src="f1.gif" class="card-img-top" alt="Foto Bruno">
                   <div class="card-body">
                     <p class="card-text fT">Colocar minha foto aqui</p>
@@ -73,7 +79,7 @@
     <!--End of Grid System-->
 
     <!--Footer-->
-    <div class="container-fluid footer">
+    <div class="container-fluid footer lightMode" id="foot">
       <div class="row">
         <div class="col">Hour: <span id="hora"></span></div>
         <div class="col">Date: <span id="dat"></span></div>

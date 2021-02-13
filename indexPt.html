@@ -2,14 +2,14 @@
 <!--PT index-->
 <html>
 <head>
-    <meta name="viewport" content="widht=device-width,initial-scale=1, user-scalabe=no, minimum-scale=0.5,maximum-scale=3">
+    <meta name="viewport" content="width=device-width,initial-scale=1, user-scalabe=no, minimum-scale=0.5,maximum-scale=3">
     <meta charset="utf-8">
     <title>Bem Vindo!</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body onload="calcIdade(),horario()">
+<body onload="calcIdade(),horario()" class="body lightMode">
 <!--NavBar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="#">Dev.Corrêa</a>
@@ -36,6 +36,12 @@
               <a class="dropdown-item" href="index.html">English </a>
             </div>
           </li>
+          <li>
+            <div class="switch__container">
+              <input id="switch-shadow" class="switch switch--shadow" type="checkbox" onchange="dark()" />
+              <label for="switch-shadow"></label>
+            </div>
+          </li>
         </ul>
       </div>
     </nav>
@@ -48,7 +54,7 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <div class="card" style="width: 100%;">
+          <div class="card lightMode" style="width: 100%;">
               <img src="f1.gif" class="card-img-top" alt="Foto Bruno">
               <div class="card-body">
                 <p class="card-text fT">Colocar minha foto aqui</p>
@@ -73,7 +79,7 @@
 <!--End of Grid System-->
 
 <!--Footer-->
-<footer class="container-fluid footer">
+<footer class="container-fluid footer lightMode">
   <div class="row">
     <div class="col">Hora: <span id="hora"></span></div>
     <div class="col">Data: <span id="dat"></span></div>
