@@ -42,33 +42,36 @@ function dark(){
     console.log(f)
     if(f.length != -1)
     {
-        for (let i = 0; i<=f.length;i++){
-            console.log(f[i].className);
-            let j = (f[i].className.length) - 9;
-            console.log(j);
+        let i = 0;
+        while (i < f.length)
+        {
+            console.log("i = ",i, "f = ",f[i].className);
+            let j = (f[i].className.length) - 10;
             let classes = "";
-            for(let a = 0;a<j;a++) 
+            for(let a = 0; a < j;a++)
             {
                 classes += f[i].className[a];
             }
+            console.log("i = ",i, "f = ",f[i].className);
             f[i].className = classes + " darkMode";
-            console.log(f[i].className);
+            console.log("i = ",i, "f = ",f[i].className);
         }
     }
     f = document.getElementsByClassName("darkMode");
     if( f.length != -1)
     {
-        for (let i = 0; i<=f.length;i++){
-            console.log(f[i].className);
-            let j = (f[i].className.length) - 8;
-            console.log(j);
+        for (let i = 0; i < f.length; i++){
+            // console.log(f[i].className);
+            let j = (f[i].className.length) - 9;
+            // console.log(j);
             let classes = "";
-            for(let a = 0;a<j;a++) 
+            for(let a = 0;a<j;a++)
             {
                 classes += f[i].className[a];
             }
+            console.log(classes);
             f[i].className = classes + " lightMode";
-            console.log(f[i].className);
+            // console.log(f[i].className);
         }
     }
 }
