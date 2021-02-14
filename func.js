@@ -6,7 +6,6 @@ function calcIdade() {
     } else {
         ano = ano - 2004;
     }
-    console.log(now.getDate(),mes,now.getFullYear())
     document.getElementById("ida").innerHTML = " " + ano + " anos";
     if(mes<10) mes = "0" + mes;
     let dia = now.getDate();
@@ -44,11 +43,10 @@ function dark(){
         let i = 0;
         while (i < f.length)
         {
-                let j = (f[i].className.length) - 10;
-                let classes = "";
-                for(let a = 0; a < j;a++) classes += f[i].className[a];
-                f[i].className = classes + " darkMode";
-                console.log("i = ",i, "f = ",f[i].className);
+            let j = (f[i].className.length) - 10, classes = "";
+            for(let a = 0; a < j;a++) classes += f[i].className[a];
+            f[i].className = classes + " darkMode";
+            console.log("i = ",i, "f = ",f[i].className);
         }
     }
     f = document.getElementsByClassName("darkMode");
@@ -57,8 +55,7 @@ function dark(){
         let i = 0;
         while (i < f.length)
         {
-                let j = (f[i].className.length) - 9;
-                let classes = "";
+                let j = (f[i].className.length) - 9, classes = "";
                 for(let a = 0;a<j;a++) classes += f[i].className[a];
                 f[i].className = classes + " lightMode";
         }
