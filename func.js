@@ -1,11 +1,12 @@
 function calcIdade() {
     var now = new Date(), ano = now.getFullYear();
     var mes = now.getMonth() + 1;
-    if ((6 >= mes) && (19 <= now.getDate())) {
+    if ((mes <= 6) && (19 <= now.getDate())) {
         ano = ano - 2005;
     } else {
         ano = ano - 2004;
     }
+    console.log(now.getDate(),mes,now.getFullYear())
     document.getElementById("ida").innerHTML = " " + ano + " anos";
     if(mes<10) mes = "0" + mes;
     let dia = now.getDate();
@@ -37,41 +38,29 @@ function dark(){
     // if(localStorage.getItem("modo") === "lightMode") localStorage.setItem("modo","darkMode");
     // else localStorage.setItem("modo","lightMode");
     // document.body.className = localStorage.getItem("modo");
-    
     let f = document.getElementsByClassName("lightMode");
-    console.log(f)
     if(f.length != -1)
     {
         let i = 0;
         while (i < f.length)
         {
-            console.log("i = ",i, "f = ",f[i].className);
-            let j = (f[i].className.length) - 10;
-            let classes = "";
-            for(let a = 0; a < j;a++)
-            {
-                classes += f[i].className[a];
-            }
-            console.log("i = ",i, "f = ",f[i].className);
-            f[i].className = classes + " darkMode";
-            console.log("i = ",i, "f = ",f[i].className);
+                let j = (f[i].className.length) - 10;
+                let classes = "";
+                for(let a = 0; a < j;a++) classes += f[i].className[a];
+                f[i].className = classes + " darkMode";
+                console.log("i = ",i, "f = ",f[i].className);
         }
     }
     f = document.getElementsByClassName("darkMode");
     if( f.length != -1)
     {
-        for (let i = 0; i < f.length; i++){
-            // console.log(f[i].className);
-            let j = (f[i].className.length) - 9;
-            // console.log(j);
-            let classes = "";
-            for(let a = 0;a<j;a++)
-            {
-                classes += f[i].className[a];
-            }
-            console.log(classes);
-            f[i].className = classes + " lightMode";
-            // console.log(f[i].className);
+        let i = 0;
+        while (i < f.length)
+        {
+                let j = (f[i].className.length) - 9;
+                let classes = "";
+                for(let a = 0;a<j;a++) classes += f[i].className[a];
+                f[i].className = classes + " lightMode";
         }
     }
 }
