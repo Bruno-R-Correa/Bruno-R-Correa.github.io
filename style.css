@@ -92,11 +92,11 @@
 
   .switch--shadow + label {
     padding: 2px;
-    width: 60px;
-    height: 30px;
+    width: 50px;
+    height: 20px;
     background-color: #dddddd;
     border-radius: 60px;
-    margin-top:7px;
+    margin-top:12px;
   }
 
   .switch--shadow + label:before,
@@ -115,7 +115,7 @@
   transition: all 0.4s;
 }
 .switch--shadow + label:after {
-  width: 31px;
+  width: 25px;
   background-color: #fff;
   border-radius: 100%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -126,7 +126,7 @@
     background-color: #8ce196;
   }
   .switch--shadow:checked + label:after {
-    transform: translateX(29px);
+    transform: translateX(24px);
   }
 
   
